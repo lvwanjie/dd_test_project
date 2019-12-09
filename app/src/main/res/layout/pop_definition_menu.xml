@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="72dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_corner_radius_8">
+
+    <TextView
+        android:id="@+id/tv_sd"
+        android:text="@string/text_sd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#4cffffff"/>
+    <TextView
+        android:id="@+id/tv_hd"
+        android:text="@string/text_hd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#4cffffff"/>
+    <TextView
+        android:id="@+id/tv_fhd"
+        android:text="@string/text_fhd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+
+
+</LinearLayout>

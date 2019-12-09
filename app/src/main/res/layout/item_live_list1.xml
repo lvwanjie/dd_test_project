@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/tv_title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="诵读经典新概念，养成纯正伦敦腔"/>
+
+    <ImageView
+        android:id="@+id/iv_anchor"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="#000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="白马时光书店"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/iv_anchor"
+        app:layout_constraintTop_toTopOf="@id/iv_anchor"
+        app:layout_constraintBottom_toBottomOf="@id/iv_anchor"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3000观看"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/live_state_layout"
+            android:background="@drawable/bg_live_list_item_state_black"
+            android:paddingLeft="18dp"
+            android:paddingRight="4dp"
+            android:textSize="12sp"
+            android:layout_marginLeft="-16dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/live_state_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:background="@drawable/bg_live_list_item_state_red">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="直播中"
+                android:textColor="@color/white"
+                android:paddingLeft="3dp"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

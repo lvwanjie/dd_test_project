@@ -1,0 +1,29 @@
+{
+  "errorCode": 0,
+  "errorMsg": "成功",
+  "data": {
+    "liveList": [
+      {
+        "liveTitle": "诵读经典新概念，养成纯正伦敦腔", //直播标题
+        "liveBgImageUrl": "https:www.baidu.com",  //直播背景图
+        "anchorName": "白马时光书店", //主播名
+        "anchorImgUrl": "https:www.baidu.com", //主播头像
+        "liveState": 0,   //0:直播预告，1：直播开始，2：直播结束
+        "startTimeStr": "本周一20：30开播", //预告开播时间liveState为0 时下发
+        "spectatorNum":4260, //观众人数 liveState为1、2 时下发
+        "jumpUrl":"" //跳转字典
+      },
+      {
+        "liveTitle": "诵读经典新概念，养成纯正伦敦腔",
+        "liveBgImageUrl": "https:www.baidu.com",
+        "anchorName": "白马时光书店",
+        "anchorImgUrl": "https:www.baidu.com",
+        "liveState": 0,
+        "startTimeStr": "本周一20：30开播",
+        "spectatorNum":4260,
+        "jumpUrl":""
+      }
+    ]
+
+  }
+}

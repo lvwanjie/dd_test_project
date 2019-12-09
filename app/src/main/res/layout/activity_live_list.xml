@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LiveList.LiveListActivity">
+
+    <View
+        android:id="@+id/view_skin_bg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@mipmap/title_bg"></View>
+    <LinearLayout
+        android:id="@+id/ly_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="#00000000"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/status_bar_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:alpha="0"
+            android:background="#f00"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/title_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0"
+                android:background="#f00"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="当当直播"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:elevation="0dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:background="#00FFFFFF"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:visibility="gone"
+                    app:layout_collapseMode="pin" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <in.srain.cube.views.ptr.PtrClassicFrameLayout
+            android:id="@+id/silver_refresh_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:overScrollMode="never"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <!--<in.srain.cube.views.ptr.PtrClassicFrameLayout-->
+        <!--android:id="@+id/silver_refresh_frame"-->
+        <!--android:layout_width="match_parent"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--android:layout_height="match_parent"-->
+
+        <!--app:layout_constraintTop_toBottomOf="@id/ly_title">-->
+
+        <!--<androidx.recyclerview.widget.RecyclerView-->
+            <!--android:id="@+id/recycler_view"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:overScrollMode="never">-->
+
+        <!--</androidx.recyclerview.widget.RecyclerView>-->
+
+    <!--</in.srain.cube.views.ptr.PtrClassicFrameLayout>-->
+
+
+
+</RelativeLayout>
