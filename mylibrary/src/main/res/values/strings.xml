@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Library</string>
+    <string name="text_sd">标清_myLibrary</string>
+
 </resources>
