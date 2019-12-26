@@ -12,9 +12,15 @@ public class MyApplication extends Application {
 
     public static String TAG = "ActivityLifecycleCallbacks";
 
+    private static MyApplication myApplication;
+    public static MyApplication getInstance(){
+        return  myApplication;
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
+        myApplication = this;
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
             @Override
             public void onActivityCreated(@NonNull Activity activity, @Nullable Bundle savedInstanceState) {

@@ -14,17 +14,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
-        <activity android:name=".tupian.BitmapTestActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".bujuTest.BuJuActivity"></activity>
+        <activity android:name=".pubulayout.PubuActivity" />
+        <activity android:name=".surfaceview.DrawTestActivity" />
+        <activity android:name=".draw.DrawActivity" />
+        <activity android:name=".tupian.BitmapTestActivity" />
         <activity android:name=".fanxing.FanXingActivity" />
-        <activity android:name=".windows.TestWindowActivity">
-
-        </activity>
+        <activity android:name=".windows.TestWindowActivity" />
         <activity
             android:name=".zhedielayout.TestZheDieActivity"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -40,7 +36,14 @@
             android:theme="@style/TranslucentTheme" />
         <activity android:name=".livemessage.LiveRecyclerActivity" />
         <activity android:name=".waveanim.WaveAnimActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity1" />
     </application>
 
 </manifest>
