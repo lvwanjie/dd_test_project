@@ -21,6 +21,7 @@ public class PubuItemDecoration extends RecyclerView.ItemDecoration {
 
         StaggeredGridLayoutManager.LayoutParams params = (StaggeredGridLayoutManager.LayoutParams) view.getLayoutParams();
         Log.i(TAG, "getItemOffsets: spanIndex = " + params.getSpanIndex() );
+
         int spanIndex = params.getSpanIndex();
         if(spanIndex == 0){
             outRect.left = MyUtils.dp2Px(MyApplication.getInstance(),12);

@@ -14,7 +14,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
-        <activity android:name=".bujuTest.BuJuActivity"></activity>
+        <activity android:name=".bujuTest.MergeTestActivity"></activity>
+        <activity android:name=".anim.ProductCardAnimActivity" />
+        <activity android:name=".bujuTest.BuJu1Activity" />
+        <activity android:name=".testViewPager.TestViewPagerActivity" />
+        <activity android:name=".eventBus.EventBusActivity" />
+        <activity android:name=".bujuTest.BuJuActivity" />
         <activity android:name=".pubulayout.PubuActivity" />
         <activity android:name=".surfaceview.DrawTestActivity" />
         <activity android:name=".draw.DrawActivity" />

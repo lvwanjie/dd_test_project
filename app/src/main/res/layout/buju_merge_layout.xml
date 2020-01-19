@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+        <RelativeLayout
+            android:id="@+id/rl_product_card"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/card_rotate_view"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_product_dangdu_card">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_product_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_centerVertical="true"
+                app:cardCornerRadius="4dp">
+                <com.dangdang.buy2.widget.CustomRoundAngleImageView
+                    android:id="@+id/riv_product_img"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    app:radius="4dp"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/tv_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textSize="13dp"
+                android:textColor="#141414"
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="6dp"
+                android:includeFontPadding="false"
+                android:layout_toRightOf="@id/card_product_img"/>
+            <TextView
+                android:id="@+id/tv_product_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="bbb"
+                android:textSize="10dp"
+                android:textColor="#828282"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="6dp"
+                android:includeFontPadding="false"
+                android:layout_below="@id/tv_product_name"
+                android:layout_toRightOf="@id/card_product_img"/>
+            <TextView
+                android:id="@+id/tv_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="ccc"
+                android:textSize="12dp"
+                android:textColor="#000000"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="6dp"
+                android:includeFontPadding="false"
+                android:layout_below="@id/tv_product_author"
+                android:layout_toRightOf="@id/card_product_img"/>
+
+        </RelativeLayout>
+
+        <com.example.myapplication.anim.CardRotateView
+            android:id="@+id/card_rotate_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+</merge>

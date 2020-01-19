@@ -2,28 +2,82 @@
   "errorCode": 0,
   "errorMsg": "成功",
   "data": {
-    "liveList": [
+
+    "shareInfo": {
+      "share_title": "陆谷孙：学会一门外语，不但是多了一双眼睛",
+      "share_content": "陆谷孙先生有着多重的身份，比如说《英汉大词典》的主编、翻译家，除此之外，他还时常给报刊撰文、给网友答疑。不过，最能让学生记住的，仍是站在讲台上的作为英文教师时的他。这篇看似随性写就的杂感，凝聚了陆老先",
+      "share_h5_url": "http://touch.m.dangdang.com/fx_detail.php?article_id=321684&user_client=touch&client_version=1.0",
+      "share_h5_icon": "http://img7x9.ddimg.cn/Community71/28/27/204859-ddhao_20190727212211_4121.blob-212211_o.jpg",
+      "share_icon": "http://img7x9.ddimg.cn/Community71/28/27/204859-ddhao_20190727212211_4121.blob-212211_o.jpg"
+    },
+    "bottomInfo": {
+      "paiseNum": "10",
+      "isPaise": "10",
+      "commentNum": "10",
+      "moreCommentJumpUrl": "陆谷孙先生有着多重的身份，比如说《英汉大词典》的主编、翻译家，除此之外，他还时常给报刊撰文、给网友答疑。不过，最能让学生记住的，仍是站在讲台上的作为英文教师时的他。这篇看似随性写就的杂感，凝聚了陆老先",
+      "productJumpUrl": ""
+    },
+
+    "contentList": [{
+      "floorType": "detail_user_floor",
+      "avaterUrl": "http://img7x1.ddimg.cn/imghead/49/12/7862521419571-1_e.png?1564472059",
+      "userName": "张三",
+      "userGradeUrl": "http://123123123",
+      "userJumpUrl": "mycommunity://cust_id=50277017"
+    },
+
       {
-        "liveTitle": "诵读经典新概念，养成纯正伦敦腔", //直播标题
-        "liveBgImageUrl": "https:www.baidu.com",  //直播背景图
-        "anchorName": "白马时光书店", //主播名
-        "anchorImgUrl": "https:www.baidu.com", //主播头像
-        "liveState": 0,   //0:直播预告，1：直播开始，2：直播结束
-        "startTimeStr": "本周一20：30开播", //预告开播时间liveState为0 时下发
-        "spectatorNum":4260, //观众人数 liveState为1、2 时下发
-        "jumpUrl":"" //跳转字典
+        "floorType": "detail_image_floor",
+        "imageAarry": [
+          "http://dmimg.5054399.com/allimg/pkm/pk/22.jpg",
+          "http://file02.16sucai.com/d/file/2015/0408/779334da99e40adb587d0ba715eca102.jpg",
+          "http://file02.16sucai.com/d/file/2014/0704/e53c868ee9e8e7b28c424b56afe2066d.jpg",
+          "http://file02.16sucai.com/d/file/2014/0829/372edfeb74c3119b666237bd4af92be5.jpg",
+          "http://g.hiphotos.baidu.com/zhidao/pic/item/c83d70cf3bc79f3d6e7bf85db8a1cd11738b29c0.jpg",
+          "http://imgsrc.baidu.com/forum/w=580/sign=b57187fbbf3eb13544c7b7b3961fa8cb/a826bd003af33a87dc2bab09c55c10385343b57a.jpg"
+
+        ]
+      },
+
+      {
+        "floorType": "detail_product_floor",
+        "productId": "123",
+        "productJumpUrl": "",
+        "productImageUrl": "http://img7x1.ddimg.cn/imghead/49/12/7862521419571-1_e.png?1564472059",
+        "productName": "蒲公英·英语拼读王（全12册+9CD＋6DVD光盘）",
+        "authorName": "作者：林素娥、谢静惠 文，［意］弗兰切斯",
+        "productPrice": "100"
       },
       {
-        "liveTitle": "诵读经典新概念，养成纯正伦敦腔",
-        "liveBgImageUrl": "https:www.baidu.com",
-        "anchorName": "白马时光书店",
-        "anchorImgUrl": "https:www.baidu.com",
-        "liveState": 0,
-        "startTimeStr": "本周一20：30开播",
-        "spectatorNum":4260,
-        "jumpUrl":""
-      }
-    ]
+        "floorType": "detail_text_floor",
+        "content": "非常不错的，印刷精致，封面有凹凸有致，纸质材料很有质感，字体清晰，内容丰富多彩，有趣味性，孩子喜欢。"
+      },
+      {
+        "floorType": "detail_text_floor",
+        "content": "让孩子掌握“见字读音、听音拼写”的能力！为轻松学习英语打下坚实基础。非常适合孩子学习。"
+      },
 
+      {
+        "floorType": "detail_reply_floor",
+        "replyList": [{
+          "replyCommentId": "",
+          "replyHeadUrl": "http://img7x3.ddimg.cn/imghead/70/3/9519048900673-1_e.png?1552983038",
+          "replyerJumpUrl": "mycommunity://cust_id=50277017",
+          "replyName": "小明不死",
+          "replyContent": "给他买了这套书之后，他对于里面介绍的每个知识点都非常感兴趣",
+          "moreCommentJumpUrl": ""
+        },
+          {
+            "replyCommentId": "",
+            "replyHeadUrl": "http://img7x3.ddimg.cn/imghead/70/3/9519048900673-1_e.png?1552983038",
+            "replyerJumpUrl": "mycommunity://cust_id=50277017",
+            "replyName": "小明不死",
+            "replyContent": "给他买了这套书之后，他对于里面介绍的每个知识点都非常感兴趣",
+            "moreCommentJumpUrl": ""
+          }
+        ]
+      }
+
+    ]
   }
 }

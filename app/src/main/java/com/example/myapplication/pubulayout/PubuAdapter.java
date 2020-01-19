@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+import androidx.viewpager.widget.ViewPager;
 
 import com.example.myapplication.R;
 
@@ -36,6 +37,23 @@ public class PubuAdapter extends RecyclerView.Adapter<PubuViewHolder> {
         this.context = context;
         list = getFakeData();
         this.manager = manager;
+        new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        };
+
     }
     @NonNull
     @Override
@@ -48,17 +66,17 @@ public class PubuAdapter extends RecyclerView.Adapter<PubuViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull PubuViewHolder holder, int position) {
 
-        Log.i(TAG, "onBindViewHolder: itemMeasureWidth="+ holder.imageView.getMeasuredWidth());
-        Log.i(TAG, "onBindViewHolder: itemWidth="+ holder.imageView.getWidth());
-        Log.i(TAG, "onBindViewHolder: itemParamsWidth="+ holder.itemView.getLayoutParams().width);
-        Log.i(TAG, "onBindViewHolder: itemLeftDecorationWidth="+  manager.getLeftDecorationWidth(holder.itemView));
+//        Log.i(TAG, "onBindViewHolder: itemMeasureWidth="+ holder.imageView.getMeasuredWidth());
+//        Log.i(TAG, "onBindViewHolder: itemWidth="+ holder.imageView.getWidth());
+//        Log.i(TAG, "onBindViewHolder: itemParamsWidth="+ holder.itemView.getLayoutParams().width);
+//        Log.i(TAG, "onBindViewHolder: itemLeftDecorationWidth="+  manager.getLeftDecorationWidth(holder.itemView));
         StaggeredGridLayoutManager.LayoutParams params = (StaggeredGridLayoutManager.LayoutParams) holder.itemView.getLayoutParams();
 
         Log.i(TAG, "onBindViewHolder: spanIndex = " + params.getSpanIndex() +"; position = "+position);
         int type = position%imgs.length;
-//        if(position == 1){
-//            params.setFullSpan(true);
-//        }
+        if(position == 0 || position == 1 ){
+            params.setFullSpan(true);
+        }
 
         holder.setData(list.get(position),type);
     }
@@ -68,11 +86,23 @@ public class PubuAdapter extends RecyclerView.Adapter<PubuViewHolder> {
         return list.size();
     }
 
+    @Override
+    public int getItemViewType(int position) {
+        if(position == 0){
+            return 1;
+        }
+        return 2;
+    }
+
     public List getFakeData(){
         List<PubuItemEntity> list = new ArrayList<>();
         for( int i = 0;i<100;i++){
             PubuItemEntity entity = new PubuItemEntity();
             entity.text = "item"+i;
+            if(i%3 == 0){
+                entity.text = "item"+i + "多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行";
+
+            }
             entity.imgUrl = imgs[i%imgs.length];
             list.add(entity);
         }

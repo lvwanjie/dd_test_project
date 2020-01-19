@@ -6,6 +6,7 @@ import androidx.asynclayoutinflater.view.AsyncLayoutInflater;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import android.app.Activity;
 import android.content.Context;
@@ -50,7 +51,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.recycler_view);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL));
         recyclerView.setAdapter(new MyAdapter(this));
         getClassLoader();
         Context context = getBaseContext();
@@ -69,6 +70,8 @@ public class MainActivity extends Activity {
         @Override
         public MyHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(context).inflate(R.layout.activity_main_item,parent,false);
+//            ((StaggeredGridLayoutManager.LayoutParams) view.getLayoutParams()).setFullSpan(true);
+
             MyHolder viewHolder = new MyHolder(view) ;
             return viewHolder;
         }

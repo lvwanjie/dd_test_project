@@ -12,7 +12,11 @@ public class PageInletManager {
             "com.example.myapplication.surfaceview.DrawTestActivity",
             "com.example.myapplication.pubulayout.PubuActivity",
             "com.example.myapplication.draw.DrawActivity",
-            "com.example.myapplication.bujuTest.BuJuActivity"
+            "com.example.myapplication.bujuTest.BuJuActivity",
+            "com.example.myapplication.bujuTest.BuJu1Activity",
+            "com.example.myapplication.anim.ProductCardAnimActivity",
+            "com.example.myapplication.anim.ProductCardAnimActivity",
+            "com.example.myapplication.bujuTest.MergeTestActivity"
     };
 
 
