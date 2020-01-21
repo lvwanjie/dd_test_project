@@ -14,8 +14,8 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.View;
-import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 import com.example.myapplication.R;
@@ -39,6 +39,9 @@ public class Card3dView extends View {
     BitmapDrawable bitmapDrawable2;
     BitmapDrawable frontDrawable;
     BitmapDrawable backDrawable;
+
+    private float currentX;
+    private float currentY;
 
 
     public Card3dView(Context context) {
@@ -103,7 +106,26 @@ public class Card3dView extends View {
         });
     }
 
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        switch (event.getAction()){
+            case MotionEvent.ACTION_DOWN:
+                this.currentX = event.getX();
+                this.currentY = event.getY();
+                break;
+            case MotionEvent.ACTION_MOVE:
+                float moveX = event.getX() + this.currentX;
+                float moveY = event.getY() + this.currentY;
+                this.currentX = event.getX();
+                this.currentY = event.getY();
+                setX(moveX);
+                setY(moveY);
+                break;
+        }
 
+        return true;
+
+    }
 
     public void startAnim(){
         animatorSet.start();
