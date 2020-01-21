@@ -141,13 +141,15 @@ public class ProductCardAnimActivity extends Activity {
     public void btClick(View view){
 //       setAnim1();
 //       setAnim2();
-        if(!card3dView.isRoateBack()){
-          animatorIn.start();
-        }else {
-            lyAnimator.setVisibility(View.VISIBLE);
-            animatorOut.start();
-        }
-       card3dView.startAnim();
-        cardRotateView.startAnim();
+//        if(!card3dView.isRoateBack()){
+//          animatorIn.start();
+//        }else {
+//            lyAnimator.setVisibility(View.VISIBLE);
+//            animatorOut.start();
+//        }
+//       card3dView.startAnim();
+//        cardRotateView.startAnim();
+
+        card3dView.scrollBy(10,10);
     }
 }
