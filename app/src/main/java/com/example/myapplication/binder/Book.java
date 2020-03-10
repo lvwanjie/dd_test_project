@@ -40,4 +40,8 @@ public class Book implements Parcelable {
         dest.writeInt(price);
         dest.writeString(author);
     }
+
+    public void addBook1(){
+
+    }
 }
