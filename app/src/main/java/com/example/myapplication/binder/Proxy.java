@@ -48,6 +48,10 @@ public class Proxy implements IBookManager, IInterface {
         return mRemote;
     }
 
+    public void testFunc1(){
+
+    }
+
 
     public void addFunc(){
 
