@@ -51,10 +51,6 @@ public abstract class Stub extends Binder implements IInterface,IBookManager {
         return super.onTransact(code, data, reply, flags);
     }
 
-    public void stub1(){
-
-    }
-
 
 
 }
