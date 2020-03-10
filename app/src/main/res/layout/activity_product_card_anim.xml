@@ -96,4 +96,12 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 
+    <com.example.myapplication.anim.MoveImageView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="200dp"
+        android:src="@mipmap/icon_dangdu_card_pack_up"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

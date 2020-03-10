@@ -4,17 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".draw.FadeTestActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:requiresFadingEdge="vertical"
-        android:fadingEdgeLength="40dp"
-        android:fadingEdge="vertical">
 
-    </androidx.recyclerview.widget.RecyclerView>
-    
+    <com.example.myapplication.draw.FadeView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_live_list_item_state_red"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

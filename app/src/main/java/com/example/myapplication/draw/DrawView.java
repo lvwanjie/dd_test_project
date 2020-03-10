@@ -2,6 +2,9 @@ package com.example.myapplication.draw;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.RectF;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -21,8 +24,11 @@ public class DrawView extends View {
 
     @Override
     protected void onDraw(Canvas canvas) {
-
         Log.i(TAG, "onDraw: "+i++);
+        Paint paint = new Paint();
+        paint.setColor(Color.BLUE);
+        RectF rectF = new RectF(0,0,getWidth(),getHeight());
+        canvas.drawRoundRect(rectF, 100, 100,paint);
         super.onDraw(canvas);
     }
 

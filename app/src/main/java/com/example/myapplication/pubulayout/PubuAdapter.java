@@ -33,6 +33,8 @@ public class PubuAdapter extends RecyclerView.Adapter<PubuViewHolder> {
     private String TAG = "PubuAdapter";
     private RecyclerView.LayoutManager manager;
 
+
+
     public PubuAdapter(Context context, RecyclerView.LayoutManager manager){
         this.context = context;
         list = getFakeData();

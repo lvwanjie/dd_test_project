@@ -1,4 +1,4 @@
-package com.example.myapplication.surfaceview;
+package com.example.myapplication.anim;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,11 +7,15 @@ import android.os.Bundle;
 
 import com.example.myapplication.R;
 
-public class SurfaceActivity extends Activity {
+/**
+ * 波浪动画
+ */
+
+public class WaveAnimActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_surface);
+        setContentView(R.layout.activity_wave_anim2);
     }
 }

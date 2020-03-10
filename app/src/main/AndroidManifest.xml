@@ -14,7 +14,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
-        <activity android:name=".bujuTest.MergeTestActivity"></activity>
+        <activity android:name=".zhedielayout.CoordinatorTestActivity"></activity>
+        <activity android:name=".zhedielayout.MountingActivity" />
+        <activity android:name=".surfaceview.SurfaceActivity" />
+        <activity android:name=".draw.FadeTestActivity" />
+        <activity android:name=".anim.WaveAnimActivity" />
+        <activity android:name=".anim.MoveActivity" />
+        <activity android:name=".bujuTest.MergeTestActivity" />
         <activity android:name=".anim.ProductCardAnimActivity" />
         <activity android:name=".bujuTest.BuJu1Activity" />
         <activity android:name=".testViewPager.TestViewPagerActivity" />

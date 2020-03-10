@@ -4,7 +4,7 @@ import android.util.Log;
 
 import com.google.gson.Gson;
 
-import org.json.JSONException;
+
 import org.json.JSONObject;
 
 import java.util.List;
@@ -24,7 +24,8 @@ public class TestGson {
     public static void testJSONObject(String str){
         try {
 
-            JSONObject jsonObject = new JSONObject(str);
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.optString("l");
             List list = (List) jsonObject.opt("list");
             Log.i(TAG, "testJSONObject: ");
         } catch (Exception e) {
@@ -39,4 +40,7 @@ public class TestGson {
     public static String str = "{\n" +
             "  \"list\": [{\"viewType\": 1,\"a\": 2},{\"viewType\": 2,\"b\": 2}]\n" +
             "}";
+
+
+    public static String str3 ="{\"a\":\"b\"}";
 }
