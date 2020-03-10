@@ -47,4 +47,9 @@ public class Proxy implements IBookManager, IInterface {
     public IBinder asBinder() {
         return mRemote;
     }
+
+
+    public void addFunc(){
+
+    }
 }
