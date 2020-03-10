@@ -56,4 +56,8 @@ public class Proxy implements IBookManager, IInterface {
     public void addFunc(){
 
     }
+
+    public void testFunc2(){
+
+    }
 }
