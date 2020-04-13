@@ -13,4 +13,9 @@
         android:layout_marginLeft="100dp"
         android:src="@mipmap/icon_dangdu_card_pack_up"/>
 
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </FrameLayout>

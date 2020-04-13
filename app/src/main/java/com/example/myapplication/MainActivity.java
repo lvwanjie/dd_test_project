@@ -14,6 +14,8 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,6 +61,8 @@ public class MainActivity extends Activity {
         getClassLoader();
         Context context = getBaseContext();
         Context context1 = getBaseContext();
+        Looper.getMainLooper();
+        HandlerThread handlerThread;
 
 
 

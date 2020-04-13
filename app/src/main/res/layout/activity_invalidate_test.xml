@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".draw.InvalidateTestActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ly_red"
+        android:orientation="vertical"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="#f00">
+        <com.example.myapplication.draw.DrawView
+            android:id="@+id/draw_view1"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ly_black"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@color/black"></LinearLayout>
+
+
+    <com.example.myapplication.draw.DrawView
+        android:id="@+id/draw_view"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+
+
+
+</LinearLayout>

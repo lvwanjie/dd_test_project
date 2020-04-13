@@ -25,7 +25,16 @@ public class PageInletManager {
             "com.example.myapplication.bujuTest.MergeTestActivity",
             "com.example.myapplication.zhedielayout.MountingActivity",
             "com.example.myapplication.zhedielayout.ScrollingActivity",
-            "com.example.myapplication.zhedielayout.CoordinatorTestActivity"
+            "com.example.myapplication.zhedielayout.CoordinatorTestActivity",
+            "com.example.myapplication.tupian.ImageActivity",
+            "com.example.myapplication.draw.InvalidateTestActivity",
+            "com.example.myapplication.draw.TranslateTestActivity",
+            "com.example.myapplication.WebView.WebActivity",
+            "com.example.myapplication.pubulayout.TestRecyclerViewActivity",
+            "com.example.myapplication.widget.progressBar.ProgressBarActivity",
+            "com.example.myapplication.draw.HuanChongActivity",
+            "com.example.myapplication.parcelable.ParcelableActivity",
+            "com.example.myapplication.draw.ShadowDrawActivity"
     };
 
 

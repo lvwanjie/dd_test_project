@@ -30,5 +30,9 @@ public class PubuItemDecoration extends RecyclerView.ItemDecoration {
             outRect.left = MyUtils.dp2Px(MyApplication.getInstance(),5);
             outRect.right = MyUtils.dp2Px(MyApplication.getInstance(),12);
         }
+
+        int adapterPosition = parent.getChildAdapterPosition(view);
+        int layoutPosition = parent.getChildLayoutPosition(view);
+        Log.i(TAG, "getItemOffsets: adapterPosition="+adapterPosition +"；layoutPosition="+layoutPosition);
     }
 }

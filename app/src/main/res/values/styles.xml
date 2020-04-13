@@ -28,5 +28,10 @@
         <item name="android:colorBackground">#00000000</item>
     </style>
 
+    <!-- 图书榜打分样式 -->
+    <style name="bookbangRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/layer_list_ratingbar_bookbang_list</item>
+    </style>
+
 
 </resources>
