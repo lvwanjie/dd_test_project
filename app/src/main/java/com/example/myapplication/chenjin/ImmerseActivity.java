@@ -26,5 +26,12 @@ public class ImmerseActivity extends Activity {
         }
 
 
+        System.out.println("sssss");
+
+    }
+
+
+    public void testA(){
+
     }
 }
