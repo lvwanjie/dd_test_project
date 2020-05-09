@@ -7,15 +7,20 @@ import android.graphics.Canvas;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.example.myapplication.R;
+import com.example.myapplication.utils.CustomRoundAngleImageView;
 
 public class DrawActivity extends Activity implements View.OnClickListener{
 
     public LinearLayout linearLayout;
     private String TAG = "DrawActivity";
     private DrawView drawView;
+    private ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +28,10 @@ public class DrawActivity extends Activity implements View.OnClickListener{
         Canvas canvas;
         linearLayout = findViewById(R.id.text_ly);
         drawView = findViewById(R.id.draw_view);
+        imageView = findViewById(R.id.civ_image);
+        RequestOptions requestOptions = new RequestOptions();
+//        requestOptions.error(R.drawable.aaa);
+        Glide.with(this).applyDefaultRequestOptions(requestOptions).load("http://img3m1.ddimg.cn/57/10/23762631-1_m.jpg").into(imageView);
     }
 
 

@@ -34,7 +34,15 @@ public class PageInletManager {
             "com.example.myapplication.widget.progressBar.ProgressBarActivity",
             "com.example.myapplication.draw.HuanChongActivity",
             "com.example.myapplication.parcelable.ParcelableActivity",
-            "com.example.myapplication.draw.ShadowDrawActivity"
+            "com.example.myapplication.draw.ShadowDrawActivity",
+            "com.example.myapplication.windows.TestPupWindowActivity",
+            "com.example.myapplication.bujuTest.BUJU2Activity",
+            "com.example.myapplication.zhedielayout.ScrollingActivity2",
+            "com.example.myapplication.anim.HpAnimActivity",
+            "com.example.myapplication.widget.editText.EditInputFilterActivity",
+            "com.example.myapplication.anim.HPTestAnimActivity",
+            "com.example.myapplication.testFragment.TestFragmentActivity",
+            "com.example.myapplication.widget.timePicker.TimePickerActivity"
     };
 
 

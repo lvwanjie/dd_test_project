@@ -27,6 +27,10 @@ public class TestRecyclerAdapter extends RecyclerView.Adapter<TestRecyclerAdapte
         this.list = getFakeData();
     }
 
+    public void setData(List list){
+        this.list = list;
+    }
+
     public void remove(int position){
         list.remove(position);
         notifyItemRemoved(position);
@@ -117,8 +121,12 @@ public class TestRecyclerAdapter extends RecyclerView.Adapter<TestRecyclerAdapte
 
     public static List getFakeData(){
 
+        return getFakeData(10);
+    }
+
+    public static List getFakeData(int num){
         List list = new ArrayList();
-        for(int i=0;i<10;i++){
+        for(int i=0;i<num;i++){
             TestRecyclerItemEntity entity = new TestRecyclerItemEntity();
             if(i == 5){
                 entity.str = "这是第"+i+"个大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字大量文字";

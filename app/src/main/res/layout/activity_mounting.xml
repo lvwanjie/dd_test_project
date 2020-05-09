@@ -17,6 +17,7 @@
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:layout_marginTop="10dp"
+                app:layout_behavior="com.example.myapplication.zhedielayout.AlwaysSnapBehavior"
                 android:theme="@style/Theme.AppCompat">
 
 

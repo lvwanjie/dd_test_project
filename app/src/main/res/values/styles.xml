@@ -33,5 +33,10 @@
         <item name="android:progressDrawable">@drawable/layer_list_ratingbar_bookbang_list</item>
     </style>
 
+    <style name="pup_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_bottom_slild_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_bottom_slild_out</item>
+    </style>
+
 
 </resources>

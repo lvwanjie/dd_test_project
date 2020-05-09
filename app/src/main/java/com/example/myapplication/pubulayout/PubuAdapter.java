@@ -61,6 +61,9 @@ public class PubuAdapter extends RecyclerView.Adapter<PubuViewHolder> {
     @Override
     public PubuViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(this.context).inflate(R.layout.pubu_item_layout,parent,false);
+        StaggeredGridLayoutManager.LayoutParams params = (StaggeredGridLayoutManager.LayoutParams) view.getLayoutParams();
+//        params.setFullSpan(true);
+
         PubuViewHolder viewHolder = new PubuViewHolder(view);
         return viewHolder;
     }
@@ -76,9 +79,9 @@ public class PubuAdapter extends RecyclerView.Adapter<PubuViewHolder> {
 
         Log.i(TAG, "onBindViewHolder: spanIndex = " + params.getSpanIndex() +"; position = "+position);
         int type = position%imgs.length;
-        if(position == 0 || position == 1 ){
-            params.setFullSpan(true);
-        }
+//        if(position == 0 || position == 1 ){
+//            params.setFullSpan(true);
+//        }
 
         holder.setData(list.get(position),type);
     }

@@ -2,14 +2,14 @@ apply plugin: 'com.android.application'
 
 android {
     println("---------------android---------------")
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
     defaultConfig {
         println("---------------defaultConfig---------------")
 
         applicationId "com.example.myapplication"
         minSdkVersion 15
-        targetSdkVersion 29
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -31,6 +31,7 @@ task(helloTask(group: 'hard', description: 'task learn') {
 
 
 dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     println("---------------dependencies---------------")
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])

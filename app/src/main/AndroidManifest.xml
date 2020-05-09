@@ -14,7 +14,18 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
-        <activity android:name=".parcelable.JumpPageActivity"></activity>
+        <activity android:name=".widget.timePicker.TimePickerActivity"></activity>
+        <activity android:name=".testFragment.TestFragmentActivity" />
+        <activity android:name=".anim.HPTestAnimActivity" />
+        <activity android:name=".widget.editText.EditInputFilterActivity" />
+        <activity android:name=".anim.HpAnimActivity" />
+        <activity
+            android:name=".zhedielayout.ScrollingActivity2"
+            android:label="@string/title_activity_scrolling2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".bujuTest.BUJU2Activity" />
+        <activity android:name=".windows.TestPupWindowActivity" />
+        <activity android:name=".parcelable.JumpPageActivity" />
         <activity android:name=".parcelable.ParcelableActivity" />
         <activity android:name=".draw.HuanChongActivity" />
         <activity android:name=".widget.progressBar.ProgressBarActivity" />
@@ -69,7 +80,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity1" />
-        <activity android:name="com.example.myapplication.draw.ShadowDrawActivity"/>
+        <activity android:name=".draw.ShadowDrawActivity" />
     </application>
 
 </manifest>

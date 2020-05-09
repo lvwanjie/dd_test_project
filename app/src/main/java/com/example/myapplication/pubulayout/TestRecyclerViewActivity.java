@@ -7,10 +7,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.example.myapplication.R;
+
+import java.util.List;
 
 public class TestRecyclerViewActivity extends Activity {
 
@@ -41,5 +44,12 @@ public class TestRecyclerViewActivity extends Activity {
     protected void onDestroy() {
         super.onDestroy();
         recyclerView.setAdapter(null);
+    }
+
+    private int i = 9;
+    public void reset(View view){
+        List list = TestRecyclerAdapter.getFakeData(i--);
+        adapter.setData(list);
+        adapter.notifyDataSetChanged();
     }
 }

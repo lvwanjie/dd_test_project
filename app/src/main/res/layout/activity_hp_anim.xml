@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".anim.HpAnimActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startAnim"/>
+
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_marginTop="100dp"
+        android:scaleX="0"
+        android:scaleY="0"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:src="@drawable/ing"/>
+
+        <ImageView
+            android:id="@+id/iv_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/frame_anim"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <com.example.myapplication.anim.FrameImageView
+        android:id="@+id/iv_below"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/frame_anim1"/>
+
+    <ImageView
+        android:id="@+id/iv_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/frame_anim"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:visibility="visible"/>
+
+
+</LinearLayout>

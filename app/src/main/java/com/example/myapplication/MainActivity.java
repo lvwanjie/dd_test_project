@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Looper;
+import android.text.SpannableString;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -58,6 +59,9 @@ public class MainActivity extends Activity {
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL));
         recyclerView.setAdapter(new MyAdapter(this));
+//        SpannableString spanString = new SpannableString (null);
+
+//        System.out.println("spanString: " + spanString.toString());
         getClassLoader();
         Context context = getBaseContext();
         Context context1 = getBaseContext();

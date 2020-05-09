@@ -1,0 +1,46 @@
+
+
+
+{
+  "errorCode": 0,
+  "errorMsg": "成功",
+  "data": {
+    "combineTitle": "#我的旅行阅读目录",
+    "combineId": "xx",
+    "combineNum": "10.2万+条内容",
+    "combineDes": "别人家的孩子学习英语都看了那些书？6-8岁的孩子学习能力强，适合做一些精读练习，快来看看吧~",
+    "combineImageUrl": "http://img3m9.ddimg.cn/23/17/22730819-1_h.jpg",
+    "activityName": "四月有奖活动火热进行中",
+    "activityInfo":[{
+      "content": "2019你的读书还有救2019你的读书还有救"
+    },{
+      "title": "活动规则",
+      "content": "1、活动时间\n2、看书打卡"
+    }
+    ],
+    "tabList": [{
+      "tabType": "hottest",
+      "tabTitle": "最热"
+    }, {
+      "tabType": "newest",
+      "tabTitle": "最新"
+    }]
+  }
+}
+
+
+
+{
+  "floorType": "comment_list_hor",
+  "floorId": "楼层ID",
+  "imageUrl": "www.baidu.com",
+  "bookName": "小熊印象派（艺术界",
+  "title": "这本书很好看这本书很好看这本书很好看这本书很好看",
+  "commenterName": "书评人名称",
+  "commentHeadPic": "www.baidu.com",
+  "jumpUrl": "跳转字典",
+  "pointInfo": "requiestId=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "topicName": "#那些美好的青春文学",
+}
+
+
