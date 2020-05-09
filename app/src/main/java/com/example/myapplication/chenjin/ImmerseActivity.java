@@ -32,6 +32,6 @@ public class ImmerseActivity extends Activity {
 
 
     public void testA(){
-
+        System.out.println("aaaaaaaaa");
     }
 }
