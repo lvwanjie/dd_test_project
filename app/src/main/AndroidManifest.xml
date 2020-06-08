@@ -14,7 +14,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
-        <activity android:name=".widget.timePicker.TimePickerActivity"></activity>
+        <activity android:name=".ANRTest.ANRTestActivity"></activity>
+        <activity android:name=".widget.nestScroll.NestScrollTestActivity" />
+        <activity android:name=".testClassLoader.CLActivity" />
+        <activity
+            android:name=".zhedielayout.NestScrollActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".widget.timePicker.TimePickerActivity" />
         <activity android:name=".testFragment.TestFragmentActivity" />
         <activity android:name=".anim.HPTestAnimActivity" />
         <activity android:name=".widget.editText.EditInputFilterActivity" />

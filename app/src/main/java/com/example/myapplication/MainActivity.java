@@ -59,13 +59,15 @@ public class MainActivity extends Activity {
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL));
         recyclerView.setAdapter(new MyAdapter(this));
-//        SpannableString spanString = new SpannableString (null);
+//        SpannableString spanString = new SpannableString (null); 1111111111111111111111111111111
 
 //        System.out.println("spanString: " + spanString.toString());
         getClassLoader();
+        Button button;
         Context context = getBaseContext();
         Context context1 = getBaseContext();
         Looper.getMainLooper();
+        MainActivity.class.getClassLoader();
         HandlerThread handlerThread;
 
 

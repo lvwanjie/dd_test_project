@@ -11,14 +11,28 @@ import java.util.List;
 public class BigDecimalTest {
 
     public static void main(String[] args) {
-        BigDecimal value = new BigDecimal("2.1900000000");
-        BigDecimal noZeros = value.stripTrailingZeros();
-        String result = noZeros.toPlainString();
-        System.out.println("result: " + result);
+//        BigDecimal value = new BigDecimal("2.1900000000");
+//        BigDecimal noZeros = value.stripTrailingZeros();
+//        String result = noZeros.toPlainString();
+//        System.out.println("result: " + result);
+//    /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/jre/lib/resources.jar:
+//    /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/jre/lib/rt.jar:
+//    /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/jre/lib/sunrsasign.jar:
+//    /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/jre/lib/jsse.jar:
+//    /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/jre/lib/jce.jar:
+//    /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/jre/lib/charsets.jar:
+//    /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/jre/lib/jfr.jar:
+//    /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/jre/classes
+        System.out.println(System.getProperty("sun.boot.class.path"));
+        System.out.println(BigDecimalTest.class.getClassLoader());
+        ClassLoader classLoader;
+
+
 
 
 
     }
+
 
 //    public SpannableString getAwardDecString(String str, List<HighLightPositionModel> list){
 //        SpannableString spanString = new SpannableString (str);

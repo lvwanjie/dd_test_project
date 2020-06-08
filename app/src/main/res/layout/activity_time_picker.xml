@@ -8,15 +8,22 @@
 
 
     <LinearLayout
+        android:layout_marginTop="100dp"
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="match_parent">
 
         <DatePicker
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:datePickerMode="spinner"
-            android:calendarViewShown="false"></DatePicker>
+            android:calendarViewShown="false"
+            android:theme="@style/Theme.Design.Light"></DatePicker>
 
     </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="show"/>
 
 </RelativeLayout>

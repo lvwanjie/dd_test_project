@@ -42,7 +42,11 @@ public class PageInletManager {
             "com.example.myapplication.widget.editText.EditInputFilterActivity",
             "com.example.myapplication.anim.HPTestAnimActivity",
             "com.example.myapplication.testFragment.TestFragmentActivity",
-            "com.example.myapplication.widget.timePicker.TimePickerActivity"
+            "com.example.myapplication.widget.timePicker.TimePickerActivity",
+            "com.example.myapplication.zhedielayout.NestScrollActivity",
+            "com.example.myapplication.testClassLoader.CLActivity",
+            "com.example.myapplication.widget.nestScroll.NestScrollTestActivity",
+            "com.example.myapplication.ANRTest.ANRTestActivity"
     };
 
 

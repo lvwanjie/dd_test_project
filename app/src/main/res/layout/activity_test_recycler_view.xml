@@ -12,14 +12,14 @@
         android:text="reset"
         android:onClick="reset"/>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <com.example.myapplication.pubulayout.MyRecyclerView
         android:id="@+id/recycler_view"
         android:layout_marginTop="100dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingBottom="30dp">
 
-    </androidx.recyclerview.widget.RecyclerView>
+    </com.example.myapplication.pubulayout.MyRecyclerView>
 
     <LinearLayout
         android:id="@+id/ly"

@@ -25,15 +25,22 @@ public class DrawView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         Log.i(TAG, "onDraw: "+i++);
-        Paint paint = new Paint();
-        paint.setColor(Color.BLUE);
-        RectF rectF = new RectF(0,0,getWidth(),getHeight());
-        canvas.drawRoundRect(rectF, 100, 100,paint);
+//        Paint paint = new Paint();
+//        paint.setColor(Color.BLUE);
+//        RectF rectF = new RectF(0,0,getWidth(),getHeight());
+//        canvas.drawRoundRect(rectF, 100, 100,paint);
         super.onDraw(canvas);
     }
 
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
         super.onLayout(changed, left, top, right, bottom);
+        Log.i(TAG, "onLayout: ");
+    }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        Log.i(TAG, "onMeasure: ");
     }
 }

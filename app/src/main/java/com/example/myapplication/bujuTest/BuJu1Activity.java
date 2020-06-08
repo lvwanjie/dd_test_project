@@ -52,6 +52,7 @@ public class BuJu1Activity extends Activity {
         }else {
             spannableString.setSpan(new AbsoluteSizeSpan(MyUtils.dp2Px(this,18)),1,newStr.length(), Spanned.SPAN_INCLUSIVE_EXCLUSIVE);
         }
+        System.out.println("");
 
         return spannableString;
 

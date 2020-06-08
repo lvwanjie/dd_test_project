@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="#fff">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#00000000"
+            app:elevation="0dp"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:collapsedTitleGravity="center"
+                app:collapsedTitleTextAppearance="@style/set_up_collapsed_title"
+                app:elevation="0dp"
+                app:expandedTitleMarginBottom="20dp"
+                app:expandedTitleMarginStart="12dp"
+                app:expandedTitleTextAppearance="@style/set_up_expanded_title"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+                app:statusBarScrim="@android:color/transparent"
+                app:title="设置"
+                app:titleEnabled="true">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:orientation="vertical"
+                    android:id="@+id/toolbar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="#00000000"
+                    android:gravity="center"
+                    app:contentInsetEnd="0dp"
+                    app:contentInsetLeft="0dp"
+                    app:contentInsetRight="0dp"
+                    app:contentInsetStart="0dp"
+                    app:elevation="0dp"
+                    app:layout_collapseMode="pin" />
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingBottom="24dp"
+            android:scrollbars="none"
+            android:fillViewport="true"
+            android:background="#f2f2f2"
+
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/user_info_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="76dp"
+                    android:background="#fff">
+
+                    <ImageView
+                        android:id="@+id/civ_head_pic"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/civ_head_pic"
+                        >
+                        <TextView
+                            android:id="@+id/user_info_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="#141414"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/tv_signature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/user_info_tv"
+                            android:layout_marginTop="4dp"
+                            android:text=""
+                            android:singleLine="true"
+                            android:textColor="#A0A0A0"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                    <TextView style="@style/style_settings_item_more" />
+
+
+                </RelativeLayout>
+
+                <!--收货地址-->
+                <RelativeLayout
+                    android:id="@+id/shipping_address_rl"
+                    style="@style/style_settings_item_layout">
+
+                    <TextView
+                        style="@style/style_settings_item_title"
+                        android:text="收货地址" />
+
+                    <TextView style="@style/style_settings_item_more" />
+                </RelativeLayout>
+
+                <!--增票资质-->
+                <RelativeLayout
+                    android:id="@+id/invoice_rl"
+                    style="@style/style_settings_item_layout"
+                    android:layout_marginTop="0.5dp"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TextView
+                        style="@style/style_settings_item_title"
+                        android:text="增票资质" />
+
+                    <TextView
+                        android:id="@+id/invoice_more_tv"
+                        style="@style/style_settings_item_more" />
+
+                    <TextView
+                        android:id="@+id/invoice_desc_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/invoice_more_tv"
+                        android:includeFontPadding="false"
+                        android:textColor="#b1b1b1"
+                        android:textSize="13dp"
+                        tools:text="添加增票资质" />
+
+                </RelativeLayout>
+
+                <!--安全中心-->
+                <RelativeLayout
+                    android:id="@+id/security_center_rl"
+                    style="@style/style_settings_item_layout"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginBottom="9dp">
+
+                    <TextView
+                        style="@style/style_settings_item_title"
+                        android:text="安全中心" />
+
+                    <TextView
+                        android:id="@+id/etv_security"
+                        style="@style/style_settings_item_more" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/etv_security"
+                        android:includeFontPadding="false"
+                        android:textColor="#A0A0A0"
+                        android:textSize="14dp"
+                        android:text="账号/密码" />
+
+                </RelativeLayout>
+
+                <!--省流量模式-->
+                <RelativeLayout
+                    android:id="@+id/low_pic_mode_rl"
+                    style="@style/style_settings_item_layout">
+
+                    <TextView
+                        style="@style/style_settings_item_title"
+                        android:text="省流量模式" />
+
+
+
+                </RelativeLayout>
+
+                <!--WIFI自动下载新版-->
+                <RelativeLayout
+                    android:id="@+id/auto_download_rl"
+                    style="@style/style_settings_item_layout">
+
+                    <TextView
+                        style="@style/style_settings_item_title"
+                        android:text="WIFI下自动更新" />
+
+
+
+                </RelativeLayout>
+
+                <!--个性化推荐-->
+                <RelativeLayout
+                    android:id="@+id/rl_recommend_layout"
+                    style="@style/style_settings_item_layout">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:text="允许个性化推荐"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textColor="#141414"/>
+
+
+
+
+                </RelativeLayout>
+
+                <!--清除缓存-->
+                <RelativeLayout
+                    android:id="@+id/clear_cache_rl"
+                    style="@style/style_settings_item_layout">
+
+                    <TextView
+                        style="@style/style_settings_item_title"
+                        android:text="清除缓存" />
+
+                    <TextView
+                        android:id="@+id/cache_size_more_tv"
+                        style="@style/style_settings_item_more" />
+
+                    <TextView
+                        android:id="@+id/cache_size_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/cache_size_more_tv"
+                        android:includeFontPadding="false"
+                        android:textColor="#b1b1b1"
+                        android:textSize="13dp" />
+
+                </RelativeLayout>
+
+                <!--意见反馈-->
+                <RelativeLayout
+                    android:id="@+id/feedback_rl"
+                    style="@style/style_settings_item_layout">
+
+                    <TextView
+                        style="@style/style_settings_item_title"
+                        android:text="意见反馈" />
+
+                    <TextView style="@style/style_settings_item_more" />
+
+                </RelativeLayout>
+
+                <!--帮助-->
+                <RelativeLayout
+                    android:id="@+id/help_rl"
+                    style="@style/style_settings_item_layout"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/style_settings_item_title"
+                        android:text="t" />
+
+                    <TextView style="@style/style_settings_item_more" />
+
+                </RelativeLayout>
+
+                <!--清除使用痕迹-->
+                <RelativeLayout
+                    android:id="@+id/clear_trace_rl"
+                    style="@style/style_settings_item_layout"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/style_settings_item_title"
+                        android:text="s" />
+
+                    <TextView style="@style/style_settings_item_more" />
+
+                </RelativeLayout>
+
+                <!--错误信息反馈-->
+                <RelativeLayout
+                    android:id="@+id/log_rl"
+                    style="@style/style_settings_item_layout"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TextView
+                        style="@style/style_settings_item_title"
+                        android:text="错误信息反馈" />
+
+                    <TextView style="@style/style_settings_item_more" />
+
+                </RelativeLayout>
+
+                <!--关于当当-->
+                <RelativeLayout
+                    android:id="@+id/about_rl"
+                    style="@style/style_settings_item_layout">
+
+                    <TextView
+                        android:id="@+id/about_tv"
+                        style="@style/style_settings_item_title"
+                        android:text="关于当当" />
+
+                    <TextView
+                        android:id="@+id/about_more_tv"
+                        style="@style/style_settings_item_more" />
+
+                    <TextView
+                        android:id="@+id/tv_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@id/about_more_tv"
+                        android:includeFontPadding="false"
+                        android:textColor="#A0A0A0"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/new_version_tv"
+                        android:layout_width="32dp"
+                        android:layout_height="14dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@+id/about_tv"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:textColor="#ffffff"
+                        android:textSize="9dp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <!--当当阅读-->
+                <LinearLayout
+                    android:id="@+id/dd_reader_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp">
+
+                    <RelativeLayout
+                        style="@style/style_settings_item_layout"
+                        android:background="#00000000">
+
+                        <TextView
+                            style="@style/style_settings_item_title"
+
+                            android:text="当当云阅读" />
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="88dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="0dp"
+                        app:cardPreventCornerOverlap="false">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            />
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <!--设置mix测试时间-->
+                <RelativeLayout
+                    android:id="@+id/mix_test_rl"
+                    style="@style/style_settings_item_layout"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/style_settings_item_title"
+                        android:text="设置mix预览时间" />
+
+                    <TextView style="@style/style_settings_item_more" />
+
+                </RelativeLayout>
+
+                <!--首页测试-->
+                <RelativeLayout
+                    android:id="@+id/home_test_rl"
+                    style="@style/style_settings_item_layout"
+                    android:layout_marginTop="0.5dp">
+
+                    <TextView
+                        style="@style/style_settings_item_title"
+                        android:text="首页测试" />
+
+                    <TextView style="@style/style_settings_item_more" />
+
+                </RelativeLayout>
+
+                <!--登出-->
+                <TextView
+                    android:id="@+id/sign_out_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="9dp"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="abc"
+                    android:textColor="#ff463c"
+                    android:textSize="16dp" />
+
+
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
