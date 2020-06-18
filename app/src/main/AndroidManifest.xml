@@ -13,8 +13,17 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true">
-        <activity android:name=".ANRTest.ANRTestActivity"></activity>
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".launchMode.LMSingleTaskActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.example.myApplication1"></activity>
+        <activity
+            android:name=".launchMode.LMSingleInstanceActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".launchMode.TestLaunchModeActivity" />
+        <activity android:name=".draw.MeasureTestActivity" />
+        <activity android:name=".ANRTest.ANRTestActivity" />
         <activity android:name=".widget.nestScroll.NestScrollTestActivity" />
         <activity android:name=".testClassLoader.CLActivity" />
         <activity

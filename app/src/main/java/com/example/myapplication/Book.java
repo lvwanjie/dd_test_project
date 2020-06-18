@@ -11,6 +11,10 @@ public class Book implements Parcelable {
 
     public String author;
 
+    public Book(){
+
+    }
+
     protected Book(Parcel in) {
         name = in.readString();
         price = in.readInt();

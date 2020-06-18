@@ -12,6 +12,18 @@ public class pattern {
 //        test1();
         String s = resetNickName("1234567890abcdefg");
         System.out.println(s);
+
+        int a = 30/100;
+        float b = 30/100;
+        float c = (float)(30/100);
+        float d = (float)30/100;
+        float e = (float)30/(float) 100;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+
     }
 
 

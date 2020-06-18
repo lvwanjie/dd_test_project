@@ -46,7 +46,9 @@ public class PageInletManager {
             "com.example.myapplication.zhedielayout.NestScrollActivity",
             "com.example.myapplication.testClassLoader.CLActivity",
             "com.example.myapplication.widget.nestScroll.NestScrollTestActivity",
-            "com.example.myapplication.ANRTest.ANRTestActivity"
+            "com.example.myapplication.ANRTest.ANRTestActivity",
+            "com.example.myapplication.draw.MeasureTestActivity",
+            "com.example.myapplication.launchMode.TestLaunchModeActivity"
     };
 
 

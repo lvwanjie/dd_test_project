@@ -32,7 +32,9 @@ public class TimePickerActivity extends FragmentActivity {
 
     public void show(View view){
         try {
-            datePickerDialogFragment.show(getSupportFragmentManager(),"");
+            if(!datePickerDialogFragment.isAdded()){
+                datePickerDialogFragment.showNow(getSupportFragmentManager(),"");
+            }
         }catch (Exception e){
             e.printStackTrace();
         }
