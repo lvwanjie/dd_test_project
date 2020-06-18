@@ -34,4 +34,9 @@ public class ANRTestActivity extends Activity {
         }
         Handler handler;
     }
+
+
+    public void testPush(){
+        System.out.println("aaaaa");
+    }
 }
