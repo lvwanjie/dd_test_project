@@ -37,6 +37,6 @@ public class ANRTestActivity extends Activity {
 
 
     public void testPush(){
-        System.out.println("aaaaa");
+        System.out.println("bbbbb");
     }
 }
