@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="51dp">
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ad_loud_speaker_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"/>
+
+    <TextSwitcher
+        android:id="@+id/tv_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="53dp"/>
+
+    <TextView
+        android:id="@+id/etv_close"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="15dp"
+        android:layout_marginRight="12dp"
+        android:textColor="#de7600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"/>
+
+
+
+</RelativeLayout>

@@ -5,6 +5,7 @@ import android.app.Dialog;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,10 +25,28 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import static android.content.Context.INPUT_METHOD_SERVICE;
+import static androidx.constraintlayout.widget.Constraints.TAG;
 
 public class MyDialogFragment1 extends DialogFragment {
 
     private EditText editText;
+
+
+    public static MyDialogFragment1 newInstance(Entity entity){
+        MyDialogFragment1 myDialogFragment1 = new MyDialogFragment1();
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("entity",entity);
+        myDialogFragment1.setArguments(bundle);
+        return myDialogFragment1;
+    }
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Entity entity = (Entity) getArguments().getSerializable("entity");
+        Log.i(TAG, "onCreate: ");
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

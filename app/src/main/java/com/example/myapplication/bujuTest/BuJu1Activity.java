@@ -19,9 +19,11 @@ import android.widget.TextView;
 import com.example.myapplication.MyUtils;
 import com.example.myapplication.R;
 
+@SuppressWarnings("FieldCanBeLocal")
 public class BuJu1Activity extends Activity {
 
     private TextView tvSpan;
+    @SuppressWarnings("FieldCanBeLocal")
     private TextView tvSpan1;
     private ImageSpan imageSpan;
     private SpannableString spannableString;

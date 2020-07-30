@@ -9,6 +9,10 @@ import android.widget.Button;
 
 import com.example.myapplication.R;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Hashtable;
+
 public class DrawTestActivity extends Activity {
 
     private Button button;
@@ -17,6 +21,9 @@ public class DrawTestActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        HashMap hashMap;
+        Hashtable hashtable;
+        HashSet hashSet;
         setContentView(R.layout.activity_draw_test);
         drawView = findViewById(R.id.draw_view);
         button = findViewById(R.id.bt);

@@ -28,6 +28,15 @@ public class TestWindowActivity extends Activity {
 //        layoutParams.flags = WindowManager.LayoutParams.Flagtouc
 //        windowManager.addView(view,);
         testWindowManagerAdd();
+        getEntity();
+    }
+    
+    public void getEntity(){
+        if(getIntent().getExtras() != null){
+            Bundle bundle = getIntent().getExtras();
+            Entity entity = (Entity) bundle.getSerializable("entity");
+            Log.i(TAG, "getEntity: ");
+        }
     }
 
     public void testWindowManagerAdd(){

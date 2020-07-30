@@ -8,8 +8,10 @@ import android.graphics.Path;
 import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.View;
+import android.view.ViewGroup;
 
 public class DrawView extends View {
+
 
     private Paint paint = new Paint();
     private int index = 0;

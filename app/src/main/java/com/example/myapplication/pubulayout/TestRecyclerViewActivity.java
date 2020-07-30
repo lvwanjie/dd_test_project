@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Adapter;
 import android.widget.Button;
@@ -14,6 +15,8 @@ import android.widget.LinearLayout;
 import com.example.myapplication.R;
 
 import java.util.List;
+
+import static androidx.constraintlayout.widget.Constraints.TAG;
 
 public class TestRecyclerViewActivity extends Activity {
 
@@ -44,6 +47,17 @@ public class TestRecyclerViewActivity extends Activity {
     protected void onDestroy() {
         super.onDestroy();
         recyclerView.setAdapter(null);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.i(TAG, "onResume: ");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
     }
 
     private int i = 9;

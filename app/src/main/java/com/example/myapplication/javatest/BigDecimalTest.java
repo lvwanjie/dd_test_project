@@ -23,14 +23,23 @@ public class BigDecimalTest {
 //    /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/jre/lib/charsets.jar:
 //    /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/jre/lib/jfr.jar:
 //    /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/jre/classes
-        System.out.println(System.getProperty("sun.boot.class.path"));
-        System.out.println(BigDecimalTest.class.getClassLoader());
-        ClassLoader classLoader;
+//        System.out.println(System.getProperty("sun.boot.class.path"));
+//        System.out.println(BigDecimalTest.class.getClassLoader());
+//        ClassLoader classLoader;
 
 
+        testScale(2300000000.1);
 
 
+    }
 
+
+    public static  void testScale(double d){
+        BigDecimal bigDecimal = new BigDecimal(d+"");
+        System.out.println(bigDecimal.toString());
+
+//        bigDecimal.stripTrailingZeros();
+        System.out.println(bigDecimal.setScale(2,BigDecimal.ROUND_HALF_UP).stripTrailingZeros().toPlainString());
     }
 
 

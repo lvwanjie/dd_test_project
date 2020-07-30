@@ -3,9 +3,11 @@ package com.example.myapplication.javatest.reflex;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.lang.reflect.Field;
+import java.util.HashMap;
 
 public class ReflexTest {
 
+    public final String a = "好合好散";
     public static void main(String args[]){
         Class pClz = Person.class;
         try {
@@ -22,5 +24,14 @@ public class ReflexTest {
             e.printStackTrace();
         }
 
+
+    }
+
+    public String getA(){
+        return a;
+    }
+
+    public String ddcA(){
+        return a;
     }
 }

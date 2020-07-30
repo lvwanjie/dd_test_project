@@ -29,9 +29,7 @@ JNIEXPORT jint JNICALL Java_com_example_myapplication_jniTest_JniDemo_getSomethi
  * Signature: ()V
  */
 JNIEXPORT void JNICALL Java_com_example_myapplication_jniTest_JniDemo_testHello
-  (JNIEnv *, jobject){
-    printf("c++ hello world ")
-  };
+  (JNIEnv *, jobject);
 
 #ifdef __cplusplus
 }

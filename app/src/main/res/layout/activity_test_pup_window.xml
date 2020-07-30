@@ -11,4 +11,15 @@
         android:layout_height="wrap_content"
         android:onClick="show"/>
 
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="show1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="show2"/>
+
 </LinearLayout>

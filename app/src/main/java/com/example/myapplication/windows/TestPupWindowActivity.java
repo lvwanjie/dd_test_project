@@ -10,6 +10,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -17,6 +18,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -36,6 +38,7 @@ public class TestPupWindowActivity extends FragmentActivity {
     PopupWindow popupWindow;
     private MyDialogFragment myDialogFragment;
     private MyDialogFragment1 myDialogFragment1;
+    private Entity entity = new Entity();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,8 +70,30 @@ public class TestPupWindowActivity extends FragmentActivity {
 
 //        myDialogFragment.show(getSupportFragmentManager(),"");
         myDialogFragment1.show(getSupportFragmentManager(),"");
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                if(getSupportFragmentManager() != null && !getSupportFragmentManager().isStateSaved()){
+
+                    myDialogFragment1.dismiss();
+                }
+            }
+        },2000);
 
 //        showDialog();
+    }
+
+
+    public void show1(View view){
+        MyDialogFragment1.newInstance(entity).show(getSupportFragmentManager(),"");
+    }
+
+    public void show2(View view){
+        Intent intent = new Intent(this,TestWindowActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("entity",entity);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 
     public void showDialog(){

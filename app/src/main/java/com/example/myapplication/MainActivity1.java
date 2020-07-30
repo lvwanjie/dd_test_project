@@ -6,6 +6,8 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapRegionDecoder;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.SystemClock;
+import android.util.Log;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -23,6 +25,8 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import static androidx.constraintlayout.widget.Constraints.TAG;
 
 public class MainActivity1 extends Activity {
 
@@ -47,13 +51,33 @@ public class MainActivity1 extends Activity {
         SurfaceView surfaceView = new SurfaceView(this);
         SurfaceHolder holder = surfaceView.getHolder();
 //        holder.lockCanvas()
-
+        Handler handler = new Handler();
+        long l = SystemClock.uptimeMillis();
+        Log.i(TAG, "onCreate: l="+l);
 
     }
+
 
     public <T extends View> T findViewById1( int id) {
         return getWindow().findViewById(id);
     }
 
 
+    private View view;
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+
+        Handler handler = new Handler();
+        if(view != null){
+            view.post(new Runnable() {
+                @Override
+                public void run() {
+
+                }
+            });
+        }
+
+    }
 }

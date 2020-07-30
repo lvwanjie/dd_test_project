@@ -3,6 +3,7 @@ package com.example.myapplication.draw;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Canvas;
 import android.os.Bundle;
 import android.util.Log;
@@ -52,7 +53,12 @@ public class DrawActivity extends Activity implements View.OnClickListener{
         drawView.setVisibility(View.GONE);
         drawView.setVisibility(View.VISIBLE);
         drawView.setVisibility(View.GONE);
+
+        Intent intent = new Intent(this,FadeTestActivity.class);
+        startActivity(intent);
+        LinearLayout linearLayout;
     }
+
 
     @Override
     public void onClick(View v) {

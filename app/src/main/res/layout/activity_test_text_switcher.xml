@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".widget.textSwitcher.TestTextSwitcher"
+    android:orientation="vertical">
+
+
+    <TextSwitcher
+        android:id="@+id/text_switcher"
+        android:layout_width="200dp"
+        android:inAnimation="@anim/slide_bottom_in"
+        android:outAnimation="@anim/slide_top_out"
+        android:layout_height="50dp">
+
+    </TextSwitcher>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <com.example.myapplication.widget.textSwitcher.AdTipCarousel
+        android:id="@+id/ad_tip_carousel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/bt_ad"
+        android:text="AD_TIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

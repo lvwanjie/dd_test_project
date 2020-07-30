@@ -15,9 +15,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".launchMode.LMSingleTaskActivity"
+        <activity android:name=".fitTest.ToastActivity"></activity>
+        <activity android:name=".fitTest.TestPermissionActivity" />
+        <activity android:name=".fitTest.reflexTest" />
+
+        <service
+            android:name=".ANRTest.AnrService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".widget.textSwitcher.TestTextSwitcher" />
+        <activity android:name=".transAnim.BTransActivity" />
+        <activity android:name=".transAnim.ATransActivity" />
+        <activity android:name=".tupian.InBitmapTest" />
+        <activity android:name=".aop.AopTest" />
+        <activity android:name=".pubulayout.TestRecyCheckActivity" />
+        <activity
+            android:name=".launchMode.LMSingleTaskActivity"
             android:launchMode="singleTask"
-            android:taskAffinity="com.example.myApplication1"></activity>
+            android:taskAffinity="com.example.myApplication1" />
         <activity
             android:name=".launchMode.LMSingleInstanceActivity"
             android:launchMode="singleInstance" />
@@ -96,6 +112,8 @@
         </activity>
         <activity android:name=".MainActivity1" />
         <activity android:name=".draw.ShadowDrawActivity" />
+        <activity android:name=".transAnim.tranbasic.MainActivity" />
+        <activity android:name=".transAnim.tranbasic.DetailActivity" />
     </application>
 
 </manifest>

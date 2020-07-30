@@ -12,6 +12,7 @@ import android.view.View;
 public class DrawView extends View {
 
     private String TAG ="DrawView";
+    private String TAGTT ="DrawViewTT";
     private int i;
 
     public DrawView(Context context) {
@@ -43,4 +44,29 @@ public class DrawView extends View {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         Log.i(TAG, "onMeasure: ");
     }
+
+    @Override
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        Log.i(TAGTT, "onAttachedToWindow: ");
+    }
+
+    @Override
+    protected void onDetachedFromWindow() {
+        super.onDetachedFromWindow();
+        Log.i(TAGTT, "onDetachedFromWindow: ");
+    }
+
+    @Override
+    public void onWindowSystemUiVisibilityChanged(int visible) {
+        super.onWindowSystemUiVisibilityChanged(visible);
+        Log.i(TAGTT, "onWindowSystemUiVisibilityChanged: "+visible);
+    }
+
+    @Override
+    protected void onWindowVisibilityChanged(int visibility) {
+        super.onWindowVisibilityChanged(visibility);
+        Log.i(TAGTT, "onWindowVisibilityChanged: "+visibility);
+    }
+
 }

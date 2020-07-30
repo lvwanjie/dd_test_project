@@ -48,7 +48,15 @@ public class PageInletManager {
             "com.example.myapplication.widget.nestScroll.NestScrollTestActivity",
             "com.example.myapplication.ANRTest.ANRTestActivity",
             "com.example.myapplication.draw.MeasureTestActivity",
-            "com.example.myapplication.launchMode.TestLaunchModeActivity"
+            "com.example.myapplication.launchMode.TestLaunchModeActivity",
+            "com.example.myapplication.pubulayout.TestRecyCheckActivity",
+            "com.example.myapplication.tupian.InBitmapTest",
+            "com.example.myapplication.transAnim.tranbasic.MainActivity",
+            "com.example.myapplication.widget.textSwitcher.TestTextSwitcher",
+            "com.example.myapplication.aop.AopTest",
+            "com.example.myapplication.fitTest.reflexTest",
+            "com.example.myapplication.fitTest.TestPermissionActivity",
+            "com.example.myapplication.fitTest.ToastActivity"
     };
 
 
